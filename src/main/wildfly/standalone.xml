@@ -288,7 +288,7 @@
             </filters>
         </subsystem>
         <subsystem xmlns="urn:wildfly:cassandra:1.0">
-            <cluster name="WildflyCluster" seed-provider-class-name="org.apache.cassandra.locator.SimpleSeedProvider" seed-provider-seeds="${jboss.bind.address:127.0.0.1}" listen-address="${jboss.bind.address:127.0.0.1}" broadcast-address="${jboss.bind.address:127.0.0.1}" start-native-transport="true" start-rpc="true"/>
+            <cluster name="WildflyCluster" seed-provider-class-name="org.apache.cassandra.locator.SimpleSeedProvider" seed-provider-seeds="127.0.0.1" listen-address="127.0.0.1" broadcast-address="127.0.0.1" start-native-transport="true" start-rpc="true"/>
         </subsystem>
     </profile>
 
