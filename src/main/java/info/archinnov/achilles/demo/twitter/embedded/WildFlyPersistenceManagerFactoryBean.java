@@ -11,8 +11,8 @@ import org.springframework.beans.factory.config.AbstractFactoryBean;
  */
 public class WildFlyPersistenceManagerFactoryBean extends AbstractFactoryBean<PersistenceManager> {
 
-    private static PersistenceManagerFactory pmFactory = PersistenceManagerFactory.PersistenceManagerFactoryBuilder.builder(
-            Cluster.builder().addContactPoints("127.0.0.1").withPort(9042).withClusterName("achilles").build())
+    private static final PersistenceManagerFactory pmFactory = PersistenceManagerFactory.PersistenceManagerFactoryBuilder.builder(
+            Cluster.builder().addContactPoints("127.0.0.1", "cassandra").withPort(9042).withClusterName("achilles").build())
             .withEntityPackages("info.archinnov.achilles.demo.twitter.entity")
             .withDefaultReadConsistency(ConsistencyLevel.ONE)
             .withDefaultWriteConsistency(ConsistencyLevel.ONE)

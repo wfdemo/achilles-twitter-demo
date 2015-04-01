@@ -10,7 +10,7 @@
     <properties>
         <java-version>1.7</java-version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <achilles.version>3.0.11</achilles.version>
+        <achilles.version>3.0.18</achilles.version>
         <spring.version>3.2.10.RELEASE</spring.version>
         <commons.lang.version>2.6</commons.lang.version>
         <pover.mock.version>1.4.9</pover.mock.version>
